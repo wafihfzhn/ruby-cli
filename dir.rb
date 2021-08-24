@@ -1,9 +1,5 @@
-# old_dir = '/Users/wafihfzhn/Projects/ruby_cli/directory'
 puts 'Please enter your directory ?'
 dir = gets.strip
-
-# puts dir == old_dir
-# puts dir.strip == old_dir
 
 files = Dir.glob(File.join(dir, '**', '*')).select { |file| File.file?(file) }
 files_contents = [] 
